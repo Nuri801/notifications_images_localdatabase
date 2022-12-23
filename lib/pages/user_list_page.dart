@@ -97,17 +97,17 @@ class _UserListPageState extends State<UserListPage> {
                           return ListTile(
                             title: Text(users[i].name),
                             subtitle: Text(users[i].age.toString()),
-                            // trailing: MaterialButton(
-                            //   onPressed: () {
-                            //     final inputForm = users[i];
-                            //     inPutFormBox.delete(inputForm.key);
-                            //   },
-                            //   child: const Icon(
-                            //     Icons.cancel_sharp,
-                            //     color: Colors.red,
-                            //     size: 25,
-                            //   ),
-                            // ),
+                            trailing: MaterialButton(
+                              onPressed: () {
+                                final inputForm = users[i];
+                                inPutFormBox.delete(inputForm.key);
+                              },
+                              child: const Icon(
+                                Icons.cancel_sharp,
+                                color: Colors.red,
+                                size: 25,
+                              ),
+                            ),
                           );
                         },
                       ),
